@@ -1,0 +1,177 @@
+﻿@import url('../fonts/CoolveticaRg-Regular.css');
+@import url('../fonts/LandSpeedRecord.css');
+
+.card { 
+    padding: 15px;
+    border-radius: 15px;
+    margin-bottom: 5px;
+}
+
+.card-standard, .card-crow {
+    background-color: #808080;
+}
+
+.card-berserker {
+    background-color: #8f6140;
+}
+
+.card-toxic {
+    background-color: #598937;
+}
+
+.card-skinner {
+    background-color: #bf9f32;
+}
+
+.card-seeker {
+    background-color: #313131;
+}
+
+.card-vip {
+    background-color: #376aad;
+}
+
+.card-lostzombivor {
+    background-color: #aa55a1;
+}
+
+.spawn:not(:first-child) {
+    margin-top: 10px;
+}
+
+.spawn > div {
+    height: 100px;
+}
+
+.spawn-red .spawn-value {
+    background-color: #ce081f;
+}
+
+.spawn-orange .spawn-value {
+    background-color: #e45216;
+}
+
+.spawn-yellow .spawn-value {
+    background-color: #f6b801;
+}
+
+.spawn-blue .spawn-value {
+    background-color: #3b87a9;
+}
+
+.spawn-flavor {
+    float: left;
+    width: 57%;
+    background-color: #fff;
+    font-family: 'LandSpeedRecord';
+}
+
+.spawn-manhole .spawn-flavor {
+    background-image: url(../img/manhole.png);
+    background-repeat:no-repeat;
+    background-position-x:right;
+    background-size:contain;
+}
+
+.spawn-value {
+    float: left;
+    width: 43%;
+    font-family: 'CoolveticaRg-Regular';
+    background-repeat:no-repeat;
+    background-size:contain;
+}
+
+.card-standard .spawn-walker .spawn-value {
+    background-image: url(../img/zombies/standard-walker.png);
+    background-position-x:right;
+}
+
+.card-standard .spawn-runner .spawn-value {
+    background-image: url(../img/zombies/standard-runner.png);
+    background-position-x:right;
+}
+
+.card-standard .spawn-fatty .spawn-value {
+    background-image: url(../img/zombies/standard-fatty.png);
+    background-position-x:right;
+}
+
+.card-standard .spawn-abomination .spawn-value {
+    background-image: url(../img/zombies/standard-abomination.png);
+    background-position-x:right;
+}
+
+.card-standard .spawn-dog .spawn-value {
+    background-image: url(../img/zombies/dog.png);
+    background-position-x:right;
+}
+
+.card-berserker .spawn-walker .spawn-value {
+    background-image: url(../img/zombies/berserker-walker.png);
+    background-position-x:right;
+}
+
+.card-berserker .spawn-runner .spawn-value {
+    background-image: url(../img/zombies/berserker-runner.png);
+    background-position-x:right;
+}
+
+.card-berserker .spawn-fatty .spawn-value {
+    background-image: url(../img/zombies/berserker-fatty.png);
+    background-position-x:right;
+}
+
+.card-berserker .spawn-abomination .spawn-value {
+    background-image: url(../img/zombies/berserker-abomination.png);
+    background-position-x:right;
+}
+
+.card-toxic .spawn-walker .spawn-value {
+    background-image: url(../img/zombies/toxic-walker.png);
+    background-position-x:right;
+}
+
+.card-toxic .spawn-runner .spawn-value {
+    background-image: url(../img/zombies/toxic-runner.png);
+    background-position-x:right;
+}
+
+.card-toxic .spawn-fatty .spawn-value {
+    background-image: url(../img/zombies/toxic-fatty.png);
+    background-position-x:right;
+}
+
+.card-toxic .spawn-abomination .spawn-value {
+    background-image: url(../img/zombies/toxic-abomination.png);
+    background-position-x:right;
+}
+
+.card-seeker .spawn-seeker .spawn-value {
+    background-image: url(../img/zombies/seeker.png);
+    background-position-x:right;
+}
+
+.card-skinner .spawn-walker .spawn-value {
+    background-image: url(../img/zombies/skinner-walker.png);
+    background-position-x:right;
+}
+
+.card-skinner .spawn-runner .spawn-value {
+    background-image: url(../img/zombies/skinner-runner.png);
+    background-position-x:right;
+}
+
+.card-skinner .spawn-fatty .spawn-value {
+    background-image: url(../img/zombies/skinner-fatty.png);
+    background-position-x:right;
+}
+
+.card-skinner .spawn-abomination .spawn-value {
+    background-image: url(../img/zombies/skinner-abomination.png);
+    background-position-x:right;
+}
+
+.card-skinner .spawn-crawler .spawn-value {
+    background-image: url(../img/zombies/skinner-crawler.png);
+    background-position-x:right;
+}

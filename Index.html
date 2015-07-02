@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" ng-app="ZombicideApp">
+<head>
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="Content/bootstrap.min.css" />
+    <link rel="stylesheet" href="Content/style.css" />
+</head>
+<body>
+    <div class="container">
+        <div ng-controller="DeckController as deckCtrl">
+            <select ng-model="deckCtrl.dangerLevel">
+                <option value="blue">Blue</option>
+                <option value="yellow">Yellow</option>
+                <option value="orange">Orange</option>
+                <option value="red">Red</option>
+            </select>
+            <button ng-click="deckCtrl.spawnCard()">Spawn</button>
+            <button ng-click="deckCtrl.undo()">Undo</button>
+            <button ng-click="deckCtrl.shuffle()">Shuffle</button>
+
+            <div class="row card card-{{spawn.card.species}}"
+                 ng-repeat="spawn in deckCtrl.spawns | limitTo: 15"
+                 ng-class="{ 'spawn-manhole': spawn.card.manhole }">
+                <div class=" col-xs-12">
+                    <div class="row spawn spawn-{{spawn.dangerLevel}} spawn-{{spawn.spawn.type}}">
+                        <div class="spawn-flavor">
+                            <span class="h1">{{spawn.card.species}} {{spawn.spawn.type}}</span>                            
+                        </div>
+                        <div class="spawn-value">
+                            <strong class="h1">{{spawn.spawn.value}}</strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="Scripts/jquery-1.9.1.min.js"></script>
+    <script src="Scripts/angular.min.js"></script>
+    <script src="App/ZombicideApp.js"></script>
+    <script>
+
+    </script>
+</body>
+</html>
